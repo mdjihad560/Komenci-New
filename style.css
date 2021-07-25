@@ -2415,9 +2415,11 @@ ABOUT PAGE STYLESHEET
     margin-bottom: 20px;
     text-transform: capitalize;
 }
-.comenci-inner-content p{
+.comenci-inner-content p {
     color: #fff;
     opacity: 0.8;
+    max-width: 410px;
+    margin: 0 auto 30px;
 }
 .comenci-breadcrumb ul li {
     color: #fff;
