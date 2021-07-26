@@ -2407,6 +2407,9 @@ ABOUT PAGE STYLESHEET
 .comenci-inner-section {
     background-color: #2B59FF;
     padding: 175px 0 140px;
+    background-size: cover;
+    background-position: center center;
+    background-image: url(images/inner-bg.png);
 }
 .comenci-inner-content {
     text-align: center;
