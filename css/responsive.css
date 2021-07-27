@@ -112,6 +112,9 @@ h2, .h2 {
 .comenci-testimonial-quote img {
     width: 55px!important;
 }
+.comenci-cta-section {
+    background-position: center center;
+}
 /*about page*/
 .comenci-story-section .dot-shape.dot-shape2 {
     right: -7%;
@@ -325,6 +328,11 @@ h3, .h3 {
 }
 
 /*v3*/
+
+.hero-thumb {
+    text-align: center;
+    margin-bottom: 40px;
+}
 .comenci-hero-content.comenci-hero-content3 h1 {
     font-size: 50px;
     line-height: 60px;
@@ -349,6 +357,9 @@ h3, .h3 {
 }
 .comenci-dots3 {
     display: none;
+}
+.comenci-cta-section {
+    background-position: center center;
 }
 /*about page*/
 .comenci-story-section {
@@ -614,8 +625,15 @@ h1, .h1 {
     max-width: 100%;
     margin-bottom: 80px;
 }
+.comenci-logo-section {
+    padding: 55px 0 30px;
+}
+.comenci-logo-wrap {
+    justify-content: center;
+}
 .comenci-logo-item {
-    flex: 0 0 14%;
+    flex: 0 0 25%;
+    margin: 0 25px 25px;
 }
 .home-three.comenci-about-section {
     padding: 95px 0 80px;
@@ -742,6 +760,16 @@ h1, .h1 {
     margin-right: 50px;
     margin: 0 0 30px;
 }
+.comenci-single-careers-section .comenci-job-wrap{
+    display: block;
+}
+.comenci-job-button {
+    margin-top: 30px;
+}
+a.comenci-default-btn.apply-now{
+    margin: 0;
+    margin-right: 10px;
+}
 /*404 page*/
 .comenci-page404-section {
     padding: 200px 0 80px;
@@ -815,6 +843,7 @@ h2, .h2 {
     font-size: 35px;
     line-height: 43px;
 }
+
 .comenci-company-thumb-wrap {
     margin-bottom: 70px;
 }
@@ -899,11 +928,7 @@ h2, .h2 {
     line-height: 56px;
 }
 .comenci-logo-item {
-    flex: 0 0 28%;
-    margin-bottom: 30px;
-}
-.comenci-logo-section {
-    padding: 60px 0 30px;
+    margin: 0 20px 25px;
 }
 .home-three.comenci-about-section {
     padding: 85px 0 60px;
@@ -978,6 +1003,17 @@ h2, .h2 {
 .comenci-job-footer {
     margin-top: 15px;
 }
+.comenci-single-careers-section .comenci-job-wrap {
+    padding: 25px;
+    margin-bottom: 40px;
+}
+.comenci-single-careers-section .comenci-careers-meta {
+    margin-top: 35px;
+}
+.comenci-single-careers-section .comenci-careers-meta ul li {
+    margin-right: 15px;
+    margin-bottom: 0;
+}
 /*404 page*/
 .comenci-page404-section {
     padding: 200px 0 60px;
@@ -998,6 +1034,14 @@ h2, .h2 {
 }
 .comenci-coming-soon-section .comenci-subscription-field {
     margin-top: 50px;
+}
+
+/*careers*/
+.comenci-single-careers-item h2 {
+    font-size: 35px;
+}
+.comenci-single-careers-item h3 {
+    font-size: 26px;
 }
 
 }
@@ -1110,10 +1154,13 @@ a.comenci-default-btn.border-btn {
     display: block;
     text-align: center;
 }
+.comenci-logo-section {
+    padding: 55px 0 20px;
+}
 .comenci-logo-item {
     margin: 0 auto;
-    margin-bottom: 30px;
-    max-width: 150px;
+    margin-bottom: 35px;
+    max-width: 170px;
 }
 .home-three .comenci-about-thumb {
     margin-bottom: 50px;
@@ -1213,6 +1260,12 @@ a.comenci-forget-pass {
     top: 43%;
     right: -30px;
     font-size: 44px
+}
+
+/*careers*/
+.comenci-single-careers-section .comenci-careers-meta ul li {
+    margin-right: 15px;
+    margin-bottom: 10px;
 }
 
 }
