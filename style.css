@@ -2073,7 +2073,9 @@ header.comenci-header-section.home-three.sticky-menu .responsive-logo {
 }
 .log-in-btn.red-btn.border-btn:hover {
     color: #fff;
-    border: 2px solid #0F1A54;
+}
+.log-in-btn.red-btn.border-btn:after {
+    background: #FD4C5C;
 }
 .site-header .mobile-menu-trigger.color-blue span:before, 
 .site-header .mobile-menu-trigger.color-blue span:after {
