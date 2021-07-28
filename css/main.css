@@ -718,6 +718,7 @@
     font-weight: 500;
     color: #000000;
     visibility: hidden;
+    text-transform: capitalize;
   }
   .site-header .menu-block .mobile-menu-head.active .current-menu-title {
     visibility: visible;
