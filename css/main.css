@@ -446,6 +446,7 @@
   color: inherit;
   padding: 8px 20px;
   font-weight: 700;
+  color: #000;
 }
 
 @media (min-width: 992px) {
