@@ -322,7 +322,7 @@ header.comenci-header-section {
   -ms-transition: all 0.4s;
 }
 header.comenci-header-section.sticky-menu{
-    padding: 10px 0;
+    padding: 5px 0;
     background-color: #2B59FF;
 }
 /*header.comenci-header-section.home-header.sticky-menu{
