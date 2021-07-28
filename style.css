@@ -368,14 +368,34 @@ a.comenci-default-btn {
     text-align: center;
     padding: 11px;
     color: #fff;
+    z-index: 0;
+    position: relative;
+    overflow: hidden;
     font-weight: 600;
     transition: all 0.4s;
   -webkit-transition: all 0.4s;
   -moz-transition: all 0.4s;
   -ms-transition: all 0.4s;
 }
-a.comenci-default-btn:hover{
-    background-color: #0F1A54;
+a.comenci-default-btn:after {
+    content: "";
+    background: #0F1A54;
+    position: absolute;
+    transition: all 0.3s ease-in;
+    z-index: -1;
+    height: 100%;
+    left: -35%;
+    top: 0;
+    transform: skew(
+30deg
+);
+    transition-duration: 0.4s;
+    transform-origin: top left;
+    width: 0;
+}
+a.comenci-default-btn:hover:after {
+    height: 100%;
+    width: 135%;
 }
 .comenci-default-button.text-right{
     text-align: right;
@@ -980,7 +1000,8 @@ a.comenci-default-btn.border-btn.red-border {
 }
 a.comenci-default-btn.border-btn.red-border:hover{
     color: #fff;
-    background-color: #FD4C5C;
+    background-color: #fff;
+    border: 2px solid #0F1A54;
 }
 a.comenci-default-btn.border-btn.red-border.active{
     color: #fff;
@@ -1131,14 +1152,8 @@ a.comenci-default-btn.comenci-default-btn-small{
     width: 130px;
     height: 40px;
     padding: 5px;
-    transition: all 0.4s;
-  -webkit-transition: all 0.4s;
-  -moz-transition: all 0.4s;
-  -ms-transition: all 0.4s;
 }
-a.comenci-default-btn.comenci-default-btn-small:hover{
-    background-color: #0F1A54;
-}
+
 
 /*single blog*/
 .comeci-comment-box-wrap {
@@ -1321,21 +1336,9 @@ a.comenci-reply:hover{
     display: block;
     margin-bottom: 10px;
 }
-.comenci-comment-field input[type="submit"] {
+
+.comenci-blog-section #comenci-submit-btn{
     width: 140px;
-    height: 50px;
-    background: #FD4C5C;
-    border-radius: 3px;
-    color: #fff;
-    text-transform: capitalize;
-    font-weight: bold;
-    transition: all 0.4s;
-  -webkit-transition: all 0.4s;
-  -moz-transition: all 0.4s;
-  -ms-transition: all 0.4s;
-}
-.comenci-comment-field input[type="submit"]:hover{
-    background-color: #0F1A54;
 }
 
 
@@ -1386,6 +1389,8 @@ button#comenci-subscription {
     position: absolute;
     right: 5px;
     top: 0;
+    z-index: 0;
+    overflow: hidden;
     transition: all 0.4s;
     -webkit-transition: all 0.4s;
     -moz-transition: all 0.4s;
@@ -1405,8 +1410,25 @@ button#comenci-subscription {
     border-radius: 3px;
     top: 4px;
 }
-button#comenci-subscription:hover{
-    background-color: #0F1A54;
+ button#comenci-subscription:after {
+    content: "";
+    background: #0F1A54;
+    position: absolute;
+    transition: all 0.3s ease-in;
+    z-index: -1;
+    height: 100%;
+    left: -35%;
+    top: 0;
+    transform: skew( 
+30deg
+ );
+    transition-duration: 0.4s;
+    transform-origin: top left;
+    width: 0;
+}
+button#comenci-subscription:hover:after {
+    height: 100%;
+    width: 135%;
 }
 .comenci-subscription-field input::-webkit-input-placeholder{ /* WebKit, Blink, Edge */
     color:    #0F1A54;
@@ -1503,7 +1525,6 @@ a.comenci-default-btn.border-btn.active:hover{
 }
 a.comenci-default-btn.border-btn.red-border.active:hover{
     color: #fff;
-    background-color: #0F1A54;
     border: 2px solid #0F1A54;
 }
 
@@ -2030,7 +2051,9 @@ header.comenci-header-section.home-three.sticky-menu .log-in-btn.red-btn.border-
 }
 header.comenci-header-section.home-three.sticky-menu .log-in-btn.red-btn.border-btn:hover {
     color: #FD4C5C;
-    background-color: #fff;
+}
+header.comenci-header-section.home-three.sticky-menu .log-in-btn.red-btn.border-btn:after {
+    background: #fff;
 }
 header.comenci-header-section.home-three.sticky-menu .default-logo{
     opacity: 0;
@@ -2048,9 +2071,9 @@ header.comenci-header-section.home-three.sticky-menu .responsive-logo {
     background-color: transparent;
     border: 2px solid #FD4C5C;
 }
-.log-in-btn.red-btn.border-btn:hover{
+.log-in-btn.red-btn.border-btn:hover {
     color: #fff;
-    background-color: #FD4C5C;
+    border: 2px solid #0F1A54;
 }
 .site-header .mobile-menu-trigger.color-blue span:before, 
 .site-header .mobile-menu-trigger.color-blue span:after {
@@ -2566,7 +2589,8 @@ CONTACT PAGE STYLESHEET
 .comenci-input-field textarea:focus{
     border: 2px solid #2B59FF!important;
 }
-.comenci-input-field input[type="submit"]{
+
+#comenci-submit-btn{
     width: 160px;
     height: 50px;
     background: #FD4C5C;
@@ -2574,14 +2598,35 @@ CONTACT PAGE STYLESHEET
     color: #fff;
     font-weight: 700;
     transition: all 0.4s;
-  -webkit-transition: all 0.4s;
-  -moz-transition: all 0.4s;
-  -ms-transition: all 0.4s;
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    -ms-transition: all 0.4s;
+    border-radius: 3px;
+    position: relative;
+    overflow: hidden;
+    z-index: 0;
 }
-.comenci-input-field input[type="submit"]:hover{
-    background-color: #0F1A54;
+#comenci-submit-btn:after {
+    content: "";
+    background: #0F1A54;
+    position: absolute;
+    transition: all 0.3s ease-in;
+    z-index: -1;
+    height: 100%;
+    left: -35%;
+    top: 0;
+    transform: skew( 
+30deg
+ );
+    transition-duration: 0.4s;
+    transform-origin: top left;
+    width: 0;
 }
 
+#comenci-submit-btn:hover:after {
+    height: 100%;
+    width: 135%;
+}
 
 /*---------------------------------------------------
 BLOG PAGE STYLESHEET 
@@ -3314,7 +3359,6 @@ a.comenci-default-btn.apply-now.share-btn {
 }
 a.comenci-default-btn.apply-now.share-btn:hover{
     color: #fff;
-    background-color: #0F1A54;
 }
 a.comenci-default-btn.apply-now:last-child{
     margin-bottom: 0;
