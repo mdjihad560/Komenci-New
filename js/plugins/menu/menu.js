@@ -19,7 +19,6 @@
 
 
  menuMain.addEventListener("click", (e) =>{
-    event.preventDefault();
     
  	if(!menu.classList.contains("active")){
  		return;
