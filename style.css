@@ -1116,9 +1116,15 @@ BLOG SECTION
   -moz-transition: all 0.4s;
   -ms-transition: all 0.4s;
 }
-
+.media {
+    overflow: hidden;
+}
 .media img{
     width: 100%;
+    transition: 0.9s;
+}
+.comenci-blog-wrap:hover .media img{
+    transform: rotate(1deg) scale(1.05);
 }
 .comenci-blog-content {
     padding: 19px;
