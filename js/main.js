@@ -55,7 +55,7 @@ $(window).on('scroll', function(){
 /*--------------------------------------------------------------
 TESTIMONIAL SLIDER JS INIT
 --------------------------------------------------------------*/
-var testimonial_slider = $('.comenci-testimonial-slider');
+var testimonial_slider = $('.komenci-testimonial-slider');
   if (testimonial_slider.is_exist()) {
       testimonial_slider.owlCarousel({
       loop:true,
@@ -89,7 +89,7 @@ var testimonial_slider = $('.comenci-testimonial-slider');
 /*--------------------------------------------------------------
 TESTIMONIAL 2 SLIDER JS INIT
 --------------------------------------------------------------*/
-var testimonial_slider2 = $('.comenci-testimonial-slider2');
+var testimonial_slider2 = $('.komenci-testimonial-slider2');
   if (testimonial_slider2.is_exist()) {
       testimonial_slider2.owlCarousel({
       loop:true,
@@ -109,7 +109,7 @@ var testimonial_slider2 = $('.comenci-testimonial-slider2');
 /*--------------------------------------------------------------
 TESTIMONIAL 3 SLIDER JS INIT
 --------------------------------------------------------------*/
-var testimonial_slider3 = $('.comenci-testimonial-slider3');
+var testimonial_slider3 = $('.komenci-testimonial-slider3');
   if (testimonial_slider3.is_exist()) {
       testimonial_slider3.owlCarousel({
       loop:true,
@@ -141,7 +141,7 @@ var testimonial_slider3 = $('.comenci-testimonial-slider3');
 /*--------------------------------------------------------------
 THUMB1 SLIDER SLIDER JS INIT
 --------------------------------------------------------------*/
-var thumb1_slider = $('.comenci-thumb1-slider');
+var thumb1_slider = $('.komenci-thumb1-slider');
   if (thumb1_slider.is_exist()) {
       thumb1_slider.owlCarousel({
       loop:true,
@@ -161,7 +161,7 @@ var thumb1_slider = $('.comenci-thumb1-slider');
 /*--------------------------------------------------------------
 THUMB2 SLIDER JS INIT
 --------------------------------------------------------------*/
-var thumb2_slider = $('.comenci-thumb2-slider');
+var thumb2_slider = $('.komenci-thumb2-slider');
   if (thumb2_slider.is_exist()) {
       thumb2_slider.owlCarousel({
       loop:true,
@@ -192,7 +192,7 @@ var thumb2_slider = $('.comenci-thumb2-slider');
 /*--------------------------------------------------------------
 YOUTUBE MAGNIFIC POPUP JS INIT
 ------------------------------------------------------------*/
-var popup_youtube = $('.comenci-youtube-popup');
+var popup_youtube = $('.komenci-youtube-popup');
   if (popup_youtube.is_exist()){
       popup_youtube.magnificPopup({
       type: 'iframe',
@@ -204,7 +204,7 @@ var popup_youtube = $('.comenci-youtube-popup');
 /*--------------------------------------------------------------
 MAGNIFIC POPUP JS INIT
 ------------------------------------------------------------*/
-var porfolio_popup = $('.comenci-portfolio-popup');
+var porfolio_popup = $('.komenci-portfolio-popup');
 if(porfolio_popup.is_exist()){
   $(porfolio_popup).magnificPopup({
      // delegate: 'a',
@@ -248,14 +248,14 @@ var skillbar = $('.skillbar');
 /*--------------------------------------------------------------
 COUNTER JS INIT
 --------------------------------------------------------------*/
-var comenci_counter = $('#comenci-counter');
-  if(comenci_counter.is_exist()){
+var komenci_counter = $('#komenci-counter');
+  if(komenci_counter.is_exist()){
       var a = 0;
       $(window).scroll(function() {
 
-        var oTop = $(comenci_counter).offset().top - window.innerHeight;
+        var oTop = $(komenci_counter).offset().top - window.innerHeight;
         if (a == 0 && $(window).scrollTop() > oTop) {
-          $('.comenci-counter').each(function() {
+          $('.komenci-counter').each(function() {
             var $this = $(this),
               countTo = $this.attr('data-percentage');
             $({
@@ -335,9 +335,9 @@ $(window).on("load" ,function(){
 /*--------------------------------------------------------------
 THREE COLUMN FILTER JS INIT
 ------------------------------------------------------------*/
-var comenci_filter4 = $('#comenci-three-column');
-if(comenci_filter4.is_exist()){
-  var $container = $(comenci_filter4),
+var komenci_filter4 = $('#komenci-three-column');
+if(komenci_filter4.is_exist()){
+  var $container = $(komenci_filter4),
     colWidth = function () {
       var w = $container.width(), 
         columnNum = 1,
@@ -379,7 +379,7 @@ if(comenci_filter4.is_exist()){
     };
   isotope();
   $(window).resize(isotope);
-  var $optionSets = $('.comenci-portfolio-menu .option-set'),
+  var $optionSets = $('.komenci-portfolio-menu .option-set'),
       $optionLinks = $optionSets.find('li');
   $optionLinks.click(function(){
   var $this = $(this);
@@ -409,9 +409,9 @@ if(comenci_filter4.is_exist()){
 /*--------------------------------------------------------------
 FOUR COLUMN FILTER JS INIT
 ------------------------------------------------------------*/
-var comenci_filter3 = $('#comenci-four-column');
-if(comenci_filter3.is_exist()){
-  var $container = $(comenci_filter3),
+var komenci_filter3 = $('#komenci-four-column');
+if(komenci_filter3.is_exist()){
+  var $container = $(komenci_filter3),
     colWidth = function () {
       var w = $container.width(), 
         columnNum = 1,
@@ -453,7 +453,7 @@ if(comenci_filter3.is_exist()){
     };
   isotope();
   $(window).resize(isotope);
-  var $optionSets = $('.comenci-portfolio-menu .option-set'),
+  var $optionSets = $('.komenci-portfolio-menu .option-set'),
       $optionLinks = $optionSets.find('li');
   $optionLinks.click(function(){
   var $this = $(this);
