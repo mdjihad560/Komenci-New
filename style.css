@@ -32,17 +32,6 @@ TESTIMONIAL SECTION
 BLOG SECTION
 SUBSCRIPTION SECTION
 
-HOME PAGE 2 STYLESHEET 
----------------------------
-HERO SECTION
-SERVICE SECTION
-ABOUT SECTION
-SKILLBAR SECTION
-VIDEO SECTION
-COUNTER SECTION
-TEAM SECTION
-PRICING SECTION
-TESTIMONIAL SECTION
 
 HOME PAGE 3 STYLESHEET 
 ----------------------------
@@ -60,8 +49,6 @@ TESTIMONIAL SECTION
 ABOUT PAGE STYLESHEET 
 -------------------------
 CONTACT PAGE STYLESHEET 
------------------------------
-TERM & CONDITION PAGE STYLESHEET 
 ---------------------------------
 BLOG PAGE STYLESHEET 
 -----------------------------
@@ -70,16 +57,6 @@ PORTFOLIO PAGE STYLESHEET
 SERVICE SINGLE PAGE STYLESHEET 
 ---------------------------------
 CAREERS PAGE STYLESHEET 
--------------------------------
-FAQ PAGE STYLESHEET 
------------------------------
-TESTIMONIAL PAGE STYLESHEET 
-------------------------------
-404 PAGE STYLESHEET 
-----------------------------
-ACCOUNT PAGE STYLESHEET
----------------------------- 
-COMING SOON PAGE STYLESHEET 
 
 =============================================================--------------------------------------------------------------*/
 
@@ -297,7 +274,7 @@ input::placeholder { /* Most modern browsers support this now. */
 HOME PAGE STYLESHEET 
 ----------------------------------------------------*/
 #preloader {
-    background-color: #fff;
+    background-color: #000;
     height: 100%;
     width: 100%;
     position: fixed;
